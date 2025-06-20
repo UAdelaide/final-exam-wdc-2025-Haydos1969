@@ -43,6 +43,7 @@
       },
 
       methods: {
+        // attempts to log the user in
         async login() {
           response = await fetch("/api/users/login", {
             method: 'Post',
