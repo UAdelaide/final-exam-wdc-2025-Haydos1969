@@ -30,7 +30,7 @@ router.post('/register', async (req, res) => {
 
 
 router.get('/dashboard', (req, res) => {
-  
+  // if the user
   if (!req.session.user) {
     return res.status(401).sendFile('/public/index.html', { root: '.' });
   }
