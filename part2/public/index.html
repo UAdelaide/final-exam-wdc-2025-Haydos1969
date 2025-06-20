@@ -15,10 +15,10 @@
 
     <form @submit.prevent="login">
       <label> Username: <br>
-        <input type="text" name="Username" v-model="password">
+        <input type="text" name="Username" v-model="username">
       </label>
       <label> Username: <br>
-        <input type="text" name="Password" id="password">
+        <input type="text" name="Password" v-model="password">
       </label>
       <button type="submit">log in</button>
     </form>
