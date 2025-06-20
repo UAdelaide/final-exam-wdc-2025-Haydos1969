@@ -69,7 +69,7 @@ router.post('/login', async (req, res) => {
       role: rows[0].role
     };
 
-    // Returns the 
+    // Sends the user's account data
     res.json({ message: 'Login successful', user: rows[0] });
 
   } catch (error) {
