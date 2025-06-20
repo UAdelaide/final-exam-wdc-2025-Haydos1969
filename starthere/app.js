@@ -69,9 +69,9 @@ app.get('/', async (req, res) => {
   }
 });
 
-app.get('/api/dogs', async function(req, res, next) {
+app.get('/api/dogs', async (req, res) => {
   try {
-    const [dogs] = await
+    const [dogs] = await db.execute('')
   }
 })
 
