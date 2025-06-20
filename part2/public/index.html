@@ -15,11 +15,10 @@
     <p class="lead">Connect with trusted walkers for your beloved dog!</p>
 
     <form @submit.prevent="login">
-      <label> Username: <br>
-        <input type="text" name="Username" v-model="username" required >
-
-      <label> Password:
-      </label>
+      <label> Username: </label>
+      <br>
+      <input type="text" name="Username" v-model="username" required >
+      <label> Password:</label>
       <br>
       <input type="password" name="Password" v-model="password" required >
 
