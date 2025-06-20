@@ -119,8 +119,10 @@
         async function logout() {
           response = await fetch('/api/users/logout', {
             method: 'POST',
-            credentials: 'include',
-          })
+            credentials: 'include'
+          });
+
+          if response
           window.location.href = '/api/users/logout';
         }
 
