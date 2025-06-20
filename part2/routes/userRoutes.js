@@ -36,8 +36,9 @@ router.get('/dashboard', (req, res) => {
     return res.status(200).sendFile('/public/owner-dashboard.html', { root: '.' });
   }
   if (req.session.user.role === "walker") {
-    return res.status(200).sendFile('/public/owner-dashboard.html', { root: '.' });
+    return res.status(200).sendFile('/public/walker-dashboard.html', { root: '.' });
   }
+  
 });
 
 router.get('/me', (req, res) => {
