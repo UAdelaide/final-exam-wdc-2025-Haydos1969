@@ -45,7 +45,7 @@
       methods: {
         // attempts to log the user in
         async login() {
-          // sends a POST request to the login route
+          // sends a POST request to the login route to check if the username and password match an account
           response = await fetch("/api/users/login", {
             method: 'Post',
             headers: {
