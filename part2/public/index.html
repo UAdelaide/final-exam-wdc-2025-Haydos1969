@@ -58,9 +58,8 @@
           result = await response.json();
 
           if (response.ok) {
-            console.log()
+            console.log("it might work");
             window.location.href('/api/users/dashboard');
-
           }
           else {
             errorMessage = "login failed, try again"
