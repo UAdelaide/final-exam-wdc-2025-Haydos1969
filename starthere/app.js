@@ -89,7 +89,7 @@ app.get('/api/walkrequests/open', async (req, res) => {
                                     FROM WalkRequests AS r
                                     JOIN Dogs AS d ON r.dog_id = d.dog_id
                                     JOIN Users AS u ON d.owner_id = u.user_id
-                                    WHERE ;`);
+                                    WHERE r.status = 'open';`);
     res.json(walkrequests);
   } catch (err) {
     res.status(500).json({ err: 'failed to fetch walkrequests' });
