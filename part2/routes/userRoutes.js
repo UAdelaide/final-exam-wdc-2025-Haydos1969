@@ -28,7 +28,9 @@ router.post('/register', async (req, res) => {
   }
 });
 
-router.get('/dashboard')
+router.get('/dashboard', (req, res) => {
+  
+})
 
 router.get('/me', (req, res) => {
   if (!req.session.user) {
