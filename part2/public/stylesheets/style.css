@@ -61,11 +61,6 @@ footer h4 {
     text-transform: uppercase;
 }
 
-input {
-    border-radius: 5%;
-    
-}
-
 .post {
     border-bottom: 1px solid lightgrey;
     padding: 1em;
@@ -167,4 +162,9 @@ section {
 
 .bold {
     font-weight: bold;
+}
+
+input.login {
+    border-radius: 5%;
+
 }
