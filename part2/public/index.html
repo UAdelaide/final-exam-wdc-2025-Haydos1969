@@ -43,7 +43,10 @@
       methods: {
         async login() {
           try {
-            response = await fetch("/api/users/login")
+            response = await fetch("/api/users/login", {
+              method: 'Post',
+              
+            })
           }
         }
       }
