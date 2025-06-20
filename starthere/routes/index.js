@@ -7,13 +7,6 @@ router.get('/', function(req, res, next) {
 });
 
 
-router.get('/api/dogs', async function(req, res, next) {
-  let db = await mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: '',
-    database: 'DogWalkService'
-  });
-})
+
 
 module.exports = router;
