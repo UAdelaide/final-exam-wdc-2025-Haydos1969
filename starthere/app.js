@@ -80,7 +80,7 @@ app.get('/api/dogs', async (req, res) => {
   } catch (err) {
     res.status(500).json({ err: 'failed to fetch Dogs' });
   }
- });
+});
 
 app.use(express.static(path.join(__dirname, 'public')));
 
