@@ -73,7 +73,7 @@ router.post('/login', async (req, res) => {
     };
 
     // Sends the user's account data
-    res.json({ message: 'Login successful', user: rows[0] });
+    res.status(200).json({ message: 'Login successful', user: rows[0] });
 
   } catch (error) {
     res.status(500).json({ error: 'Login failed' });
