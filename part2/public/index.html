@@ -62,7 +62,7 @@
           });
 
           // if the response succeeds, calls the dashboard route
-          if (response.status() == 200) {
+          if (response.status == 200) {
             window.location.href = '/api/users/dashboard';
           }
           else {
