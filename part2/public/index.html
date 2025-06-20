@@ -59,7 +59,7 @@
 
           if (response.ok) {
             console.log("it might work");
-            window.location.href('/api/users/dashboard');
+            window.location.href = '/api/users/dashboard';
           }
           else {
             errorMessage = "login failed, try again"
