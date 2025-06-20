@@ -78,7 +78,7 @@ app.get('/api/dogs', async (req, res) => {
                                     JOIN Users ON Dogs.owner_id = Users.user_id;`);
     res.json(dogs);
   } catch (err) {
-    res.status(500).json({err: 'failed to fetch users'});
+    res.status(500).json({err: 'failed to fetch Dogs'});
   }
  });
 
