@@ -166,5 +166,6 @@ section {
 
 input.login {
     border-radius: 5%;
-
+    width: 100%;
+    box-sizing: border-box;
 }
