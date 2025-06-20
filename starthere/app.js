@@ -71,14 +71,14 @@ app.get('/', async (req, res) => {
   }
 });
 
-app.get('/api/dogs', async (req, res) => {
+app.get('/api/walkrequests/open', async (req, res) => {
   try {
-    const [dogs] = await db.execute(`SELECT Dogs.name AS dog_name, Dogs.size, Users.username AS owner_username
+    const [walkrequests] = await db.execute(`SELECT Dogs.name AS dog_name, Dogs.size, Users.username AS owner_username
                                     FROM Dogs
                                     JOIN Users ON Dogs.owner_id = Users.user_id;`);
-    res.json(dogs);
+    res.json(walkrequests);
   } catch (err) {
-    res.status(500).json({ err: 'failed to fetch Dogs' });
+    res.status(500).json({ err: 'failed to fetch walkrequests' });
   }
 });
 
