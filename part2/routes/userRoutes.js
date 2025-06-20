@@ -32,7 +32,9 @@ router.get('/dashboard', (req, res) => {
   if (!req.session.user) {
     return res.sendFile('/public/index.html', { root: '.' });
   }
-  if ()
+  if (req.session.user.role == "owner") {
+    
+  }
 });
 
 router.get('/me', (req, res) => {
