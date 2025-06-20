@@ -28,7 +28,9 @@ router.post('/register', async (req, res) => {
   }
 });
 
+
 router.get('/dashboard', (req, res) => {
+  
   if (!req.session.user) {
     return res.status(401).sendFile('/public/index.html', { root: '.' });
   }
