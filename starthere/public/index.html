@@ -6,9 +6,18 @@
     <script src="https://unpkg.com/vue@3"></script>
 </head>
 
-<body>
-    <div id="app">{{ message }}</div>
+<body id="app">
+    <div>{{ message }}</div>
     <h1>Express</h1>
     <p>Welcome to Express</p>
 </body>
+<script>
+  Vue.createApp({
+    data() {
+      return {
+        message: "Hello Vue 3!"
+      }
+    }
+  }).mount('#app');
+</script>
 </html>
