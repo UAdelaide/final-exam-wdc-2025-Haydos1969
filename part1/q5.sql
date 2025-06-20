@@ -10,4 +10,4 @@ INSERT INTO Dogs (owner_id, name, size) VALUES
   ((SELECT user_id FROM Users WHERE Users.username = 'Carol123'), 'Bella', 'small'),
   ((SELECT user_id FROM Users WHERE Users.username = 'personName'), 'Spotty', 'large'),
   ((SELECT user_id FROM Users WHERE Users.username = 'Carol123'), 'Spud', 'small'),
-  ((SELECT user_id FROM Users WHERE Users.username = 'alice123'), 'Max', 'medium');
+  ((SELECT user_id FROM Users WHERE Users.username = 'alice123'), 'Juno', 'medium');
