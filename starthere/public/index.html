@@ -14,21 +14,25 @@
 </body>
 </html>
 <script>
-  Vue.createApp({
-    data() {
-      return {
-        message: "Hello Vue 3!",
-        link: "test"
-      }
-    }
-  }).mount('#app');
+     const { createApp } = Vue;
 
-  function getDog() {
-    fetch("https://dog.ceo/api/breeds/image/random")
-    .then(response => response.json()
-    .then(response => {
-        vue.link = response.message;
-    })
-    )
-  }
+    createApp({
+      data() {
+        return {
+          dogImage: ''
+        };
+      },
+      methods: {
+        fetchDog() {
+          fetch('https://dog.ceo/api/breeds/image/random')
+            .then(response => response.json())
+            .then(data => {
+              this.dogImage = data.message;
+            });
+        }
+      },
+      mounted() {
+        this.fetchDog();
+      }
+    }).mount('#app');
 </script>
