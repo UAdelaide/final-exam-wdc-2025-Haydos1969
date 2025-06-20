@@ -8,7 +8,8 @@
 
 <body id="app">
     <div>{{ message }}</div>
-    <img id="dog" src="{{ link }}" alt={{ link }}>
+    <img :src="dogImage" alt="">
+    <button class="button-next" @click="fetchDog">🔁 CLICK HERE FOR A DOG 🔁</button>
     <h1>Express</h1>
     <p>Welcome to Express</p>
 </body>
