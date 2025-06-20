@@ -42,25 +42,24 @@
 
       methods: {
         async login() {
-          try {
-            response = await fetch("/api/users/login", {
-              method: 'Post',
-              headers: {
-                'Content-Type': 'application/json'
-              },
-              body: JSON.stringify ({
-                username: this.username,
-                password: this.password
-              })
-            });
+          response = await fetch("/api/users/login", {
+            method: 'Post',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify ({
+              username: this.username,
+              password: this.password
+            })
+          });
 
-            result = await response.json();
+          result = await response.json();
 
-            if (response.ok) {
-              
-            }
+          if (response.ok) {
+
           }
         }
+
       }
     }).mount('#app');
   </script>
