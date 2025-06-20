@@ -70,12 +70,7 @@ app.get('/', async (req, res) => {
 });
 
 app.get('/api/dogs', async function(req, res, next) {
-  let db = await mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: '',
-    database: 'DogWalkService'
-  });
+  
 })
 
 app.use(express.static(path.join(__dirname, 'public')));
