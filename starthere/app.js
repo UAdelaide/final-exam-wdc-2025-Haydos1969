@@ -35,7 +35,7 @@ let db;
       database: 'DogWalkService'
     });
 
-    // Create a table if it doesn't exist
+    /* / Create a table if it doesn't exist
     await db.execute(`
       CREATE TABLE IF NOT EXISTS books (
         id INT AUTO_INCREMENT PRIMARY KEY,
@@ -43,8 +43,8 @@ let db;
         author VARCHAR(255)
       )
     `);
-
-    /*/ Insert data if table is empty
+    
+    /* / Insert data if table is empty
     const [rows] = await db.execute('SELECT COUNT(*) AS count FROM books');
     if (rows[0].count === 0) {
       await db.execute(`
@@ -54,6 +54,7 @@ let db;
         ('Brave New World', 'Aldous Huxley')
       `);
     }
+      */
   } catch (err) {
     console.error('Error setting up database. Ensure Mysql is running: service mysql start', err);
   }
