@@ -32,11 +32,11 @@ router.get('/dashboard', (req, res) => {
   if (!req.session.user) {
     return res.status(401).sendFile('/public/index.html', { root: '.' });
   }
-  else if (req.session.user.role === "owner") {
+  if (req.session.user.role === "owner") {
     return res.status(200).sendFile('/public/owner-dashboard.html', { root: '.' });
   }
-  else if (req.session.user.role === "walker") {
-    
+  if (req.session.user.role === "walker") {
+    return res.status(200).sendFile('/public/owner-dashboard.html', { root: '.' });
   }
 });
 
