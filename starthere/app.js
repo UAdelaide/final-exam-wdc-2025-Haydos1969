@@ -73,7 +73,9 @@ app.get('/api/dogs', async (req, res) => {
   try {
     const [dogs] = await db.execute('SELECT * FROM Dogs');
     res.json(dogs);
-  } catch (err)
+  } catch (err) {
+    res.status(500).json({err: 'fai')
+  }
  })
 
 app.use(express.static(path.join(__dirname, 'public')));
