@@ -69,7 +69,7 @@ app.get('/', async (req, res) => {
   }
 });
 
-router.get('/api/dogs', async function(req, res, next) {
+app.get('/api/dogs', async function(req, res, next) {
   let db = await mysql.createConnection({
     host: 'localhost',
     user: 'root',
