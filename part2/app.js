@@ -12,9 +12,10 @@ app.use(express.static(path.join(__dirname, '/public')));
 app.use(session({
   secret: 'secret-key',
   cookie: {
-    secure
+    secure: false,
+    maxAge: 1000*60*60
   }
-}))
+}));
 
 // Routes
 const walkRoutes = require('./routes/walkRoutes');
