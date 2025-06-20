@@ -30,9 +30,9 @@ router.post('/register', async (req, res) => {
 
 router.get('/dashboard', (req, res) => {
   if (!req.session.user) {
-    return res.sendFile('/public')
+    return res.sendFile('/public/index.html');
   }
-})
+});
 
 router.get('/me', (req, res) => {
   if (!req.session.user) {
