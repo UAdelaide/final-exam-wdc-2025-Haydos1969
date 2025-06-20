@@ -30,7 +30,7 @@ router.post('/register', async (req, res) => {
 
 
 router.get('/dashboard', (req, res) => {
-  // if the user
+  // if the user is not logged in with a session, sends them back too the login page
   if (!req.session.user) {
     return res.status(401).sendFile('/public/index.html', { root: '.' });
   }
