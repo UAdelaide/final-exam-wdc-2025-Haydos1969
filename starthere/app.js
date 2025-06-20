@@ -96,7 +96,7 @@ app.get('/api/walkrequests/open', async (req, res) => {
   }
 });
 
-app.get('/api/dogs', async (req, res) => {
+app.get('/api/walkers/summary', async (req, res) => {
   try {
     const [summary] = await db.execute(`SELECT u.username AS walker_username,
                                       (SELECT COUNT(*) FROM WalkRatings r WHERE r.walker_id = u.user_id)
