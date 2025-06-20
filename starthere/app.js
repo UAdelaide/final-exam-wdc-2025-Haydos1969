@@ -106,7 +106,7 @@ app.get('/api/walkers/summary', async (req, res) => {
                                       `);
     res.json(summary);
   } catch (err) {
-    res.status(500).json({ err: 'failed to fetch Dogs' });
+    res.status(500).json({ err: 'failed to fetch summary' });
   }
 });
 
