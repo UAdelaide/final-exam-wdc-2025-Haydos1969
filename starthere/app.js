@@ -73,7 +73,7 @@ app.get('/', async (req, res) => {
 
 app.get('/api/dogs', async (req, res) => {
   try {
-    const [dogs] = await db.execute('SELECT * FROM Dogs');
+    const [dogs] = await db.execute('SELECT  FROM Dogs');
     res.json(dogs);
   } catch (err) {
     res.status(500).json({err: 'failed to fetch users'});
