@@ -85,8 +85,7 @@ router.post('/logout', (req, res) => {
 
   res.clearCookie('connect.sid');
 
-  res.json({message: 'loggout successful'})
-  res.sendFile('/public/index.html', { root: '.' });
+  res.json({message: 'loggout successful'});
 });
 
 module.exports = router;
