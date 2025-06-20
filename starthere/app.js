@@ -96,6 +96,15 @@ app.get('/api/walkrequests/open', async (req, res) => {
   }
 });
 
+app.get('/api/dogs', async (req, res) => {
+  try {
+    const [summary] = await db.execute(``);
+    res.json(dogs);
+  } catch (err) {
+    res.status(500).json({ err: 'failed to fetch Dogs' });
+  }
+});
+
 
 app.use(express.static(path.join(__dirname, 'public')));
 
