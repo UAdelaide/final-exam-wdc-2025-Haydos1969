@@ -85,6 +85,7 @@ router.post('/logout', (req, res) => {
 
   res.clearCookie('connect.sid');
 
+  
   res.sendFile('/public/index.html', { root: '.' });
 });
 
