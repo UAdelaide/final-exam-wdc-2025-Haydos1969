@@ -45,6 +45,7 @@
       methods: {
         // attempts to log the user in
         async login() {
+          // sends a POST request to the login route
           response = await fetch("/api/users/login", {
             method: 'Post',
             headers: {
