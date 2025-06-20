@@ -61,6 +61,10 @@ footer h4 {
     text-transform: uppercase;
 }
 
+input {
+    
+}
+
 .post {
     border-bottom: 1px solid lightgrey;
     padding: 1em;
