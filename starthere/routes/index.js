@@ -8,7 +8,7 @@ router.get('/', function(req, res, next) {
 
 
 router.get('/api/dogs', async function(req, res, next) {
-  db = await mysql.createConnection({
+  let db = await mysql.createConnection({
     host: 'localhost',
     user: 'root',
     password: '',
