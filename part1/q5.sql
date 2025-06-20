@@ -6,4 +6,4 @@ INSERT INTO Users (username, email, password_hash, role) VALUES
   ('personName', 'person@example.com', 'hashed738', 'owner');
 
 INSERT INTO Dogs (owner_id, name, size) VALUES
-  ('')
+  ((SELECT))
