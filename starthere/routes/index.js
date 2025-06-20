@@ -7,8 +7,13 @@ router.get('/', function(req, res, next) {
 });
 
 
-router.get('/api/dogs', function(req, res, next) {
-  
+router.get('/api/dogs', async function(req, res, next) {
+  db = await mysql.createConnection({
+    host: 'localhost',
+    user: 'root',
+    password: '',
+    database: 'DogWalkService'
+  });
 })
 
 module.exports = router;
