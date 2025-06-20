@@ -98,7 +98,7 @@ app.get('/api/walkrequests/open', async (req, res) => {
 
 app.get('/api/dogs', async (req, res) => {
   try {
-    const [summary] = await db.execute(`SELECT `);
+    const [summary] = await db.execute(`SELECT u.username AS walker_username, COUNT()`);
     res.json(summary);
   } catch (err) {
     res.status(500).json({ err: 'failed to fetch Dogs' });
