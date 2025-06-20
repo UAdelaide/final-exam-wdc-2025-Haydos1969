@@ -122,8 +122,10 @@
             credentials: 'include'
           });
 
-          if response
-          window.location.href = '/api/users/logout';
+          if (response.ok) {
+            window.location.href = '/';
+          }
+
         }
 
         onMounted(() => {
