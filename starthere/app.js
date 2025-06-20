@@ -99,7 +99,7 @@ app.get('/api/walkrequests/open', async (req, res) => {
 app.get('/api/dogs', async (req, res) => {
   try {
     const [summary] = await db.execute(`SELECT u.username AS walker_username,
-                                      SELECT COUNT(*) AS total_ratings FROM WalkRatings WHERE user_id = r.user_id,
+                                      (SELECT COUNT(*) AS total_ratings FROM WalkRatings WHERE user_id = r.user_id),
                                       `);
     res.json(summary);
   } catch (err) {
