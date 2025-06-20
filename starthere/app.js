@@ -105,8 +105,7 @@ app.get('/api/walkers/summary', async (req, res) => {
                                       JOIN WalkRequests AS wr ON wa.request_id = wr.request_id
                                       WHERE wa.walker_id = u.user_id AND wr.status = 'completed') AS completed_walks
                                       FROM Users AS u
-                                      WHERE u.role = 'walker';
-                                      `);
+                                      WHERE u.role = 'walker';`);
     res.json(summary);
   } catch (err) {
     res.status(500).json({ err: 'failed to fetch summary' });
