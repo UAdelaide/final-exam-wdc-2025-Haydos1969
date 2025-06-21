@@ -89,7 +89,9 @@
           data = await res.json();
           dog.image = data.message;
           return dog;
-        })).then(dogs)
+        })).then(dogs => {
+          
+        })
       }
 
 
