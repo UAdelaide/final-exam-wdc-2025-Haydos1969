@@ -80,12 +80,13 @@ router.post('/login', async (req, res) => {
   }
 });
 
+
 router.post('/logout', (req, res) => {
   req.session.destroy();
 
   res.clearCookie('connect.sid');
 
-  res.json({message: 'loggout successful'});
+  res.json({ message: 'loggout successful' });
 });
 
 module.exports = router;
