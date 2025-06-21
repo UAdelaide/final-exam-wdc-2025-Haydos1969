@@ -107,13 +107,14 @@
         // gets the list of dogs
         dogs = await this.getDogs();
 
-        // for each dog, fetches a random image from the api and 
+        // for each dog, fetches a random image from the api and adds it to the dog's data
         Promise.all(dogs.map(async (dog) => {
           response = await fetch('https://dog.ceo/api/breeds/image/random');
           data = await response.json();
           dog.image = data.message;
           return dog;
         })).then(dogs => {
+          
           this.dogs = dogs;
         });
       }
