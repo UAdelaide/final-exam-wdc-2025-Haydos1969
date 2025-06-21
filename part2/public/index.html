@@ -73,7 +73,8 @@
         },
 
         async getDogs() {
-          response = await fetch('/api/users/')
+          response = await fetch('/api/users/dogs');
+          dogs = await response.json()
         }
 
       },
