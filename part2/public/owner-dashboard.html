@@ -134,7 +134,7 @@
         }
 
         async function getDogs() {
-          // fetches the list of dog names
+          // fetches the list of dog names that the logged in user owns
           response = await fetch('/api/users/dog-names', {
             method: 'GET',
             credentials: 'include'
