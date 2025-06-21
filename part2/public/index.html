@@ -97,7 +97,7 @@
         async getDogs() {
           response = await fetch('/api/users/dogs');
           dogs = await response.json();
-          console.log('Fetched dogs:', data);
+          console.log('Fetched dogs:', dogs);
           return dogs;
         }
 
