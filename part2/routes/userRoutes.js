@@ -100,7 +100,7 @@ router.get('/dog-names', async (req, res) => {
 
     res.json(rows);
   } catch (error) {
-    res.status(500).json({message: ""})
+    res.status(500).json({ message: "failed to query dog names" });
   }
 });
 
