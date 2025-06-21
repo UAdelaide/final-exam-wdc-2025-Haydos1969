@@ -141,7 +141,7 @@
           });
 
           //dogs = JSON.parse(response);
-          dogs = response;
+          dogs = await response.json();
           console.log(dogs);
           console.log(Array.isArray(dogs));
 
