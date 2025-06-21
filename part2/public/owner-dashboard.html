@@ -147,13 +147,14 @@
             option = document.createElement("option");
             option.value = element.name;
             option.textContent = element.name;
-            select.append
+            select.appendChild();
           });
 
         }
 
         onMounted(() => {
           loadWalks();
+          getDogs();
         });
 
         return {
@@ -163,6 +164,7 @@
           error,
           submitWalkRequest,
           logout
+          getDogs
         };
       }
     }).mount('#app');
