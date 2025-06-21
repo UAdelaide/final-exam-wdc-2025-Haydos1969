@@ -92,7 +92,7 @@ router.post('/logout', (req, res) => {
 
 
 router.get('/dog-names', (req, res) => {
-  
+  try
 });
 
 module.exports = router;
