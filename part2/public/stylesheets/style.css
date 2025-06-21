@@ -213,6 +213,10 @@ th, td {
     padding: 10px;
 }
 
+td {
+    fl
+}
+
 tbody tr:nth-child(even) {
     background-color: white;
 }
