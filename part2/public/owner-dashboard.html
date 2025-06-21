@@ -141,8 +141,10 @@
           });
 
           dogs = await response.json();
+          // checks that the user owns at least one dog
           if (dogs.length > 0) {
             select = document.getElementById('dog-list');
+            
             dogs.forEach(element => {
               option = document.createElement("option");
               option.value = element.name;
