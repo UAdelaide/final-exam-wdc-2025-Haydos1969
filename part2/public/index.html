@@ -74,13 +74,14 @@
 
         async getDogs() {
           response = await fetch('/api/users/dogs');
-          dogs = await response.json()
+          dogs = await response.json();
+          return dogs;
         }
 
       },
 
       mounted() {
-        response = await fe
+        self.dogs = getDogs()
       }
 
 
