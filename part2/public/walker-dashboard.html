@@ -78,6 +78,10 @@
           }
         }
 
+        async function getCurrentUser() {
+          user
+        }
+
         async function logout() {
           response = await fetch('/api/users/logout', {
             method: 'POST',
