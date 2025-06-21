@@ -213,10 +213,10 @@ th, td {
     padding: 10px;
 }
 
-table tr:nth-child(even) {
+tbody tr:nth-child(even) {
     background-color: white;
 }
 
-table tr:nth-child(odd) {
+tbody tr:nth-child(odd) {
     background-color: lightgray;
 }
