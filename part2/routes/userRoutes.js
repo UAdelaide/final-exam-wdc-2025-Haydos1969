@@ -107,6 +107,8 @@ router.get('/dog-names', async (req, res) => {
 });
 
 
-router.get()
+router.get('/dogs', aync (req, res) => {
+  
+})
 
 module.exports = router;
