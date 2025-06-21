@@ -214,7 +214,7 @@ th, td {
 }
 
 td {
-    te
+    vertical-align: top;
 }
 
 tbody tr:nth-child(even) {
