@@ -85,7 +85,8 @@
 
 
         Promise.all(dogs.map(async (dog) => {
-          response = 
+          response = await fetch('https://dog.ceo/api/breeds/image/random');
+          data = 
         }))
       }
 
