@@ -134,8 +134,10 @@
         async function getDogs() {
           response = await fetch('/api/users/get-dogs', {
             method: 'GET',
-            
-          })
+            credentials: 'include'
+          });
+
+          
         }
 
         onMounted(() => {
