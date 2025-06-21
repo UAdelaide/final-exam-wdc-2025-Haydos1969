@@ -104,7 +104,7 @@ button:hover {
     float: right;
 }
 
-#ask input[type="text"], #ask textarea {
+#ask input[type="text"], #ask textarea, #ask select {
     width: 90%;
     margin-bottom: 0.5em;
 }
