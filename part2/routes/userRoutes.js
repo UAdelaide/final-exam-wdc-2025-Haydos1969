@@ -82,8 +82,9 @@ router.post('/login', async (req, res) => {
 
 // logs the user out of their session
 router.post('/logout', (req, res) => {
+  // Ends the user session
   req.session.destroy();
-
+  // clears the user's cookies
   res.clearCookie('connect.sid');
 
   res.json({ message: 'loggout successful' });
