@@ -91,10 +91,14 @@ router.post('/logout', (req, res) => {
 });
 
 
-router.get('/dog-names', (req, res) => {
+router.get('/dog-names', async (req, res) => {
   try {
-    const [rows] =
+    const [rows] = await db.query(`
+      SELECT user_id, username, email, role FROM Users
+      WHERE username = ? AND password_hash = ?
+    `, [username, password]);
   }
+  catch (error)
 });
 
 module.exports = router;
