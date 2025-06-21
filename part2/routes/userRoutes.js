@@ -95,7 +95,7 @@ router.get('/dog-names', async (req, res) => {
   try {
     const [rows] = await db.query(`
       SELECT name FROM Dogs
-      WHERE username = ? AND password_hash = ?
+      WHERE owner_id = ?
     `, [req.session.user.id]);
   }
   catch (error) {
