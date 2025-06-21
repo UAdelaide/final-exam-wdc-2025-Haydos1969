@@ -205,5 +205,6 @@ select {
 
 table {
     width: 100%;
-    border-collapse: ;
+    border-collapse: collapse;
+    margin-top: 1rem;
 }
