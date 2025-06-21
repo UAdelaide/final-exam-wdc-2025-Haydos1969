@@ -80,9 +80,9 @@
 
         async function getCurrentUser() {
           currentUser = await fetch('/api/users/me');
-          currentUser = await currentUser.json();
+          User = await currentUser.json();
 
-          this.user = 
+          this.user = User.
         }
 
         async function logout() {
