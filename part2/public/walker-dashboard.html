@@ -75,6 +75,18 @@
           }
         }
 
+        async function logout() {
+          response = await fetch('/api/users/logout', {
+            method: 'POST',
+            credentials: 'include'
+          });
+
+          if (response.ok) {
+            window.location.href = '/';
+          }
+
+        }
+
         onMounted(() => {
           loadWalkRequests();
         });
