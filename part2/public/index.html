@@ -103,7 +103,7 @@
       },
 
       mounted() {
-        dogs = getDogs();
+        dogs = this.getDogs();
 
 
         Promise.all(dogs.map(async (dog) => {
