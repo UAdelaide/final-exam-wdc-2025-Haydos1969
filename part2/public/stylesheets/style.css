@@ -211,5 +211,6 @@ table {
 
 th, td {
     padding: 10px;
-    border: 1px solid #ccc;
 }
+
+table tr:nth-child
