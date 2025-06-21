@@ -146,13 +146,13 @@
             select = document.getElementById('dog-list');
             // iterates through each dog
             dogs.forEach(element => {
+              // creates a new option element and appends it to the select element
               option = document.createElement("option");
               option.value = element.name;
               option.textContent = element.name;
               select.appendChild(option);
           });
         }
-
         }
 
         onMounted(() => {
