@@ -82,7 +82,7 @@
           currentUser = await fetch('/api/users/me');
           User = await currentUser.json();
 
-          this.user = User.
+          this.user = User.id;
         }
 
         async function logout() {
