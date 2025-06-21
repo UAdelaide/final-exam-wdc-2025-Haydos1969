@@ -95,16 +95,16 @@
         },
 
         async getDogs() {
+          // fetches the list of dogs
           response = await fetch('/api/users/dogs');
           dogs = await response.json();
-          console.log('Fetched dogs:', dogs);
           return dogs;
         }
 
       },
 
       mounted: async function() {
-        
+        // gets the l
         dogs = await this.getDogs();
 
 
