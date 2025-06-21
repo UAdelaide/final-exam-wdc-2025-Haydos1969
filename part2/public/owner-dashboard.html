@@ -140,7 +140,10 @@
             credentials: 'include'
           });
 
-           = JSON.parse(dogs)
+          dogs = JSON.parse(response);
+
+          console.log(dogs);
+          console.log(Array.isArray(dogs));
 
           select = document.getElementById('dog-list');
           dogs.forEach(element => {
