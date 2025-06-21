@@ -199,5 +199,6 @@ select {
 }
 
 .dog-photo {
-    object-fit: co;
+    object-fit: cover;
+    height: ;
 }
