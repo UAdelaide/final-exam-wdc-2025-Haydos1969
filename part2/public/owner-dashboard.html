@@ -134,6 +134,7 @@
         }
 
         async function getDogs() {
+          // fetches the list of dog names
           response = await fetch('/api/users/dog-names', {
             method: 'GET',
             credentials: 'include'
