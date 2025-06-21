@@ -80,7 +80,9 @@
         }
 
         async function getCurrentUser() {
+          // fetches the session information about the user
           currentUser = await fetch('/api/users/me');
+          // formates the response to json
           User = await currentUser.json();
 
           user.value = User.id;
