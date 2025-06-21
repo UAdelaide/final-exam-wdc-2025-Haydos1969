@@ -203,4 +203,7 @@ select {
     height: 100px;
 }
 
-table
+table {
+    width: 100%;
+    border-collapse: ;
+}
