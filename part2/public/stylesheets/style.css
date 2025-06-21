@@ -194,4 +194,5 @@ select {
     background-color: transparent;
     width: 100%;
     border-radius: 5%;
+    margin-bottom: 0.5em;
 }
