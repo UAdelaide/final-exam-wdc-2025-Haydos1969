@@ -100,7 +100,7 @@ router.get('/dog-names', async (req, res) => {
 
     res.json(rows);
   } catch (error) {
-    res.status
+    res.status(500).json({message: ""})
   }
 });
 
