@@ -93,12 +93,13 @@ router.post('/logout', (req, res) => {
 
 router.get('/dog-names', async (req, res) => {
   try {
-    //
+    // Uses the logged id in the users session to query the database for their owned dogs
     const [rows] = await db.query(`
       SELECT name FROM Dogs
       WHERE owner_id = ?
     `, [req.session.user.id]);
 
+    // returns the list of dogs
     res.json(rows);
   } catch (error) {
     res.status(500).json({ message: "failed to query dog names" });
