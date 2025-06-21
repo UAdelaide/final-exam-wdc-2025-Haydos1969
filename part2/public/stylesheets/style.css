@@ -177,6 +177,8 @@ button.login {
 
 button.logout {
     float: right;
+    border-color: red;
+    text
 }
 
 .header-row {
