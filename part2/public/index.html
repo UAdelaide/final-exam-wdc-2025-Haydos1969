@@ -104,10 +104,10 @@
       },
 
       mounted: async function() {
-        // gets the l
+        // gets the list of dogs
         dogs = await this.getDogs();
 
-
+        // for each dog, 
         Promise.all(dogs.map(async (dog) => {
           response = await fetch('https://dog.ceo/api/breeds/image/random');
           data = await response.json();
