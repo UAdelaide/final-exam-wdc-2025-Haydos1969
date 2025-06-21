@@ -192,5 +192,6 @@ button.logout {
 
 select {
     background-color: transparent;
-    width: 90%;
+    width: 100%;
+    border-radius: 0.6em;
 }
