@@ -107,8 +107,10 @@ router.get('/dog-names', async (req, res) => {
 });
 
 
-router.get('/dogs', aync (req, res) => {
-  
-})
+router.get('/dogs', async (req, res) => {
+  try {
+    
+  }
+});
 
 module.exports = router;
