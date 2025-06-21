@@ -174,3 +174,7 @@ button.login {
     margin-top: 1em;
     padding: 0.4em;
 }
+
+button.logout {
+    float: right;
+}
