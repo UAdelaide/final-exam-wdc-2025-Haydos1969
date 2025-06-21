@@ -189,3 +189,7 @@ button.logout {
     align-items: center;
     justify-content: space-between;
 }
+
+select {
+    background-color: transparent;
+}
