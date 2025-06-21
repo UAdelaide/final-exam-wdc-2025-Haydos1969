@@ -103,8 +103,8 @@
 
       },
 
-      mounted() {
-        dogs = this.getDogs();
+      mounted: async function() {
+        dogs = await this.getDogs();
 
 
         Promise.all(dogs.map(async (dog) => {
