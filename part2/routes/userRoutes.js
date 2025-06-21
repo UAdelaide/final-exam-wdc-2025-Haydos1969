@@ -93,6 +93,7 @@ router.post('/logout', (req, res) => {
 
 router.get('/dog-names', async (req, res) => {
   try {
+    //
     const [rows] = await db.query(`
       SELECT name FROM Dogs
       WHERE owner_id = ?
