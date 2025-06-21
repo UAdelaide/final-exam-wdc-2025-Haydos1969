@@ -214,7 +214,7 @@ th, td {
 }
 
 table tr:nth-child(even) {
-     background-color: grey;
+     background-color: lightgray;
 }
 
 table tr:nth-child(odd) {
