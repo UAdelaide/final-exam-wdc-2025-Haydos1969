@@ -213,4 +213,8 @@ th, td {
     padding: 10px;
 }
 
-table tr:nth-child
+table tr:nth-child(even) {
+     background-color: grey;
+}
+
+table tr:nth
